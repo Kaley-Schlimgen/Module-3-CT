@@ -6,9 +6,17 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    int num1, num2, num3;
+    
+    cout<<"Enter three integers: "<<endl;
+    cin>>num1>>num2>>num3;
+    
+    
+    cout<<"Output is: "<<num1<< ", " <<num2<< " & " <<num3;
+    
     return 0;
 }
