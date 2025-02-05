@@ -16,14 +16,19 @@
 //using namespace std;
 
 int main(int argc, const char * argv[]) {
+    int *ptr1;
     
     int num1, num2, num3;
-    
     std::cout<<"Enter three integers: "<<std::endl;
     std::cin>>num1>>num2>>num3;
     
+    ptr1 = new int(num1);
     
-    std::cout<<"You entered: "<<num1<< ", " <<num2<< " & " <<num3<<std::endl;
+    std::cout<<"Contents of Variables: "<<*ptr1<< ", " <<num2<< " & " <<num3<<std::endl;
+    
+    std::cout<<"Contents of Pointers: "<<*ptr1<< ", " <<num2<< " & " <<num3<<std::endl;
+    
+    delete ptr1;
     
     return 0;
 }
